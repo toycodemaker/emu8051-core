@@ -48,13 +48,13 @@ enum StatusCode emu_tick(struct Emu8051Core *core)
 }
 
 
-Byte emu_read_byte(struct Emu8051Core* core, size_t index)
+Byte emu_read_byte(const struct Emu8051Core* core, size_t index)
 {
     return core->ram[index];
 }
 
 
-Byte emu_read_register_byte(struct Emu8051Core* core, size_t index)
+Byte emu_read_register_byte(const struct Emu8051Core* core, size_t index)
 {
     if (index >= 0x80) {
         return core->register_ram[index-0x80];

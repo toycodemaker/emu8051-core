@@ -30,8 +30,8 @@ void emu_destroy(struct Emu8051Core* core);
 
 enum StatusCode emu_tick(struct Emu8051Core* core);
 
-Byte emu_read_byte(struct Emu8051Core* core, size_t index);
-Byte emu_read_register_byte(struct Emu8051Core* core, size_t index);
+Byte emu_read_byte(const struct Emu8051Core* core, size_t index);
+Byte emu_read_register_byte(const struct Emu8051Core* core, size_t index);
 Byte emu_set_byte(struct Emu8051Core* core, size_t index, Byte value);
 Byte emu_set_register_byte(struct Emu8051Core* core, size_t index, Byte value);
 
