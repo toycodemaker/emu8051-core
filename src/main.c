@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "1.h"
+#include "emu_assert.h"
 
 int main()
 {
     printf("Hello Emu8051\n");
-    func();
+    EMU_ASSERT(1==2);
     return 0;
 }
