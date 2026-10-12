@@ -2,3 +2,10 @@
 .*~
 build/
 .cache
+*.o
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
